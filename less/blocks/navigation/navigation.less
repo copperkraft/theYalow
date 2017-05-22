@@ -1,0 +1,26 @@
+.navigation {
+  background: #f3c306;
+  float: right;
+  margin-top: 40px;
+  box-shadow: -5px -5px 0 rgba(243, 195, 6, 0.5), -10px -10px 0 rgba(243, 195, 6, 0.5);
+  padding: 0 3em;
+
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+
+  &__link {
+    font-size: 15px;
+    padding: 0.8em;
+    border-right: 1px solid rgba(194, 148, 6, 0.5);
+    color: darken(#f3c306, 20%);
+    float: left;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+

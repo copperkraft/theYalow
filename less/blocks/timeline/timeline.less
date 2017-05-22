@@ -1,0 +1,37 @@
+.timeline {
+  padding: 0 0 170px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==");
+
+
+  &__container {
+    width: 1020px;
+    margin: 0 auto;
+    &::after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  &__title {
+    width: 1020px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+
+  &__item {
+    background: #8f7304;
+    background-clip: content-box;
+    box-sizing: border-box;
+    width: 30%;
+    height: 230px;
+    float: left;
+    margin-left: 5%;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

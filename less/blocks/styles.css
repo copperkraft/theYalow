@@ -1,0 +1,43 @@
+.timeline {
+  padding: 50px 0;
+  background-color: #f3c306;
+}
+.timeline__container {
+  width: 1020px;
+  margin: 0 auto;
+}
+.timeline__title {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+.timeline__item {
+  background: #8f7304;
+  background-clip: content-box;
+  box-sizing: border-box;
+  width: 30%;
+  height: 150px;
+  float: left;
+  margin-left: 5%;
+}
+.timeline__item:first-child {
+  margin-left: 0;
+}
+.timeline__icon {
+  font-size: 100px;
+  text-align: center;
+  color: #f3c306;
+}
+.timeline__link {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.timeline::after {
+  display: table;
+  content: '';
+  clear: both;
+}

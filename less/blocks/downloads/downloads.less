@@ -1,0 +1,48 @@
+.downloads {
+
+  background: repeating-linear-gradient(45deg, #ddd, #ddd 1px, #eee 2px, #eee 3px, #ddd 4px);
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+
+  &__container {
+    width: 1020px;
+    margin: 0 auto;
+  }
+
+  &__block {
+    box-sizing: border-box;
+    width: 33.33%;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    float: left;
+    border-right: 2px solid rgba(195, 195, 195, 0.5);
+
+    transition: background 100ms;
+    &:first-child {
+      border-left: 2px solid rgba(195, 195, 195, 0.5);
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+  }
+
+  &__icon {
+    font-size: 100px;
+    text-align: center;
+    color: #f3c306;
+  }
+  &__link {
+    display: block;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+}
