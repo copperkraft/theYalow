@@ -1,20 +1,25 @@
 .slider {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
 
-  display: table-row;
   &__container {
-    display: table-cell;
-    min-width: 1020px;
-    margin: 0 auto;
+    display: table;
+
   }
 
   &__item {
     height: 320px;
     min-width: 540px;
-    float: left; /*для того чтобы не заполняло всю ширину*/
+    float: left;
     background: rgba(243, 195, 6, 0.5);
   }
 
   &__title {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
     font-size: 50px;
     color: white;
     text-transform: uppercase;
@@ -23,38 +28,6 @@
     & span {
       color: #f3c306;
     }
-  }
-
-  &__previous {
-    display: table-cell;
-    opacity: 0;
-    width: 50%;
-    text-align: left;
-    vertical-align: middle;
-    transition: 100ms;
-    &:hover {
-      color: white;
-      background: rgba(243, 195, 6, 0.1);
-    }
-  }
-
-  &__next {
-    opacity: 0;
-    display: table-cell;
-    width: 50%;
-    text-align: right;
-    vertical-align: middle;
-    &:hover {
-      background: rgba(243, 195, 6, 0.1);
-    }
-  }
-
-  &__button {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: #f3c306;
-    padding: 0.5em;
   }
 
   &::after {
