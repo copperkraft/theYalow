@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?tbtprb');
-  src:  url('icomoon.eot?tbtprb#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?tbtprb') format('truetype'),
-    url('icomoon.woff?tbtprb') format('woff'),
-    url('icomoon.svg?tbtprb#icomoon') format('svg');
+  src:  url('icomoon.eot?xrbdt2');
+  src:  url('icomoon.eot?xrbdt2#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?xrbdt2') format('truetype'),
+    url('icomoon.woff?xrbdt2') format('woff'),
+    url('icomoon.svg?xrbdt2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,29 +24,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paper-plane:before {
-  content: "\e900";
+.icon-cloud:before {
+  content: "\e903";
 }
-.icon-travel:before {
-  content: "\e900";
+.icon-leaf:before {
+  content: "\e904";
 }
 .icon-plane:before {
-  content: "\e900";
+  content: "\e905";
 }
-.icon-mail-envelope-closed:before {
+.icon-mail:before {
   content: "\e901";
-}
-.icon-cloud-download:before {
-  content: "\e902";
 }
 .icon-user:before {
   content: "\e971";
 }
 .icon-wrench:before {
   content: "\e991";
-}
-.icon-leaf:before {
-  content: "\e9a4";
 }
 .icon-twitter:before {
   content: "\ea96";
