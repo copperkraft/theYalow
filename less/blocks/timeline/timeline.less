@@ -22,8 +22,21 @@
     padding: 1em 0;
   }
 
+  &__video {
+    float: right;
+    width: 320px;
+    height: 230px;
+    background: rgba(193, 128, 0, 0.51);
+  }
+  &__text {
+    padding: 15px 30px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+  }
+
   &__item {
-    background: #8f7304;
+    background: #ec9e04;
     background-clip: content-box;
     box-sizing: border-box;
     width: 30%;
@@ -32,6 +45,18 @@
     margin-left: 5%;
     &:first-child {
       margin-left: 0;
+    }
+
+    &--social {
+      text-align: center;
+      line-height: 1.4em;
+      font-size: 160px;
+      color: #c18000;
+    }
+    &--video {
+
+      width: 65%;
+
     }
   }
 }
