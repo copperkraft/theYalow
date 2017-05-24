@@ -1,26 +1,35 @@
+@import "../../mixins/container";
+@import "../../colors";
+
 .navigation {
-  background: #f3c306;
-  float: right;
-  margin-top: 40px;
-  box-shadow: -5px -5px 0 rgba(243, 195, 6, 0.5), -10px -10px 0 rgba(243, 195, 6, 0.5);
-  padding-left: 2em;
+    float: right;
 
-  &::after {
-    display: table;
-    content: '';
-    clear: both;
-  }
+    margin-top: 40px;
+    padding-left: 2em;
 
-  &__link {
-    font-size: 18px;
-    padding: 0.6em 1em;
-    border-right: 1px solid rgba(194, 148, 6, 0.5);
-    color: darken(#f3c306, 20%);
-    float: left;
-    &:last-child {
-      border: none;
+    background: @main-color;
+    box-shadow: -5px -5px 0 fadeout(@main-color, 50%), -10px -10px 0 fadeout(@main-color, 50%);
+
+    &::after {
+        display: table;
+        clear: both;
+
+        content: '';
     }
-  }
+
+    &__link {
+        font-size: 18px;
+
+        float: left;
+
+        padding: 0.6em 1em;
+
+        color: darken(@main-color, 20%);
+        border-right: 1px solid fadeout(darken(@main-color, 20%), 50%);
+        &:last-child {
+            border: none;
+        }
+    }
 }
 
 

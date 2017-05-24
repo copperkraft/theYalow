@@ -1,85 +1,139 @@
+@import "../../mixins/container";
+@import "../../colors";
+
+
 .timeline {
-  padding: 0 0 170px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==");
+    padding: 0 0 170px;
 
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
 
-  &__container {
-    width: 1020px;
-    margin: 0 auto;
-    &::after {
-      display: table;
-      content: '';
-      clear: both;
-    }
-  }
+    /*<div class="timeline">
+        <div class="timeline__title">lorem ipsum dolor sit amet</div>
 
-  &__title {
-    width: 1020px;
-    margin: 0 auto;
-    font-size: 36px;
-    color: white;
-    text-transform: uppercase;
-    padding: 1em 0;
-  }
+        <div class="timeline__container">
+            <div class="timeline__video-block">
+                <video class="timeline__video-player">
 
-  &__video {
-    float: right;
-    width: 320px;
-    height: 230px;
-    background: rgba(193, 128, 0, 0.51);
-  }
-  &__text {
+                </video>
+                <div class="timeline__video-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </div>
+            </div>
+            <div class="timeline__social">
+                <div class="timeline__social-icon">
+                    <span class="icon-twitter"></span>
+                </div>
+                <a class="timeline__add-link">+</a>
+            </div>
+        </div>
 
-    display: table-cell;
-    position: relative;
-    box-sizing: border-box;
-    height: 230px;
-    padding: 15px 30px;
-    font-size: 30px;
-    color: white;
-    font-weight: 200;
-    &::after {
-      line-height: normal;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      content: '+';
-      position: absolute;
-      bottom: 0;
-      right: 5px;
+        <div class="timeline__container">
+            <div class="timeline__item timeline__item--attachment">
+                <div class="timeline__video"></div>
+                <div class="timeline__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__social">
+                    <span class="icon-twitter"></span>
+                </div>
+            </div>
+        </div>
+    </div>*/
+
+    &__container {
+        .container;
     }
-  }
-  &__social {
-    text-align: center;
-    line-height: 1.4em;
-    font-size: 160px;
-    color: #c18000;
-    &::after {
-      line-height: normal;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      content: '+';
-      position: absolute;
-      bottom: 0;
-      right: 5px;
+
+    &__title {
+        font-size: 36px;
+
+        width: 1020px;
+        margin: 0 auto;
+        padding: 1em 0;
+
+        text-transform: uppercase;
+
+        color: white;
     }
-  }
-  &__item {
-    position: relative;
-    display: table-row;
-    background: #ec9e04;
-    background-clip: content-box;
-    box-sizing: border-box;
-    width: 30%;
-    height: 230px;
-    float: left;
-    margin-left: 5%;
-    &:first-child {
-      margin-left: 0;
+
+    &__video {
+        float: right;
+
+        width: 320px;
+        height: 230px;
+
+        background: rgba(193, 128, 0, 0.51);
     }
-    &--attachment {
-      width: 65%;
+    &__text {
+        font-size: 30px;
+        font-weight: 200;
+
+        position: relative;
+
+        display: table-cell;
+
+        box-sizing: border-box;
+        height: 230px;
+        padding: 15px 30px;
+
+        color: white;
+        &::after {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: normal;
+
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+
+            content: '+';
+
+            color: white;
+        }
     }
-  }
+    &__social {
+        font-size: 160px;
+        line-height: 1.4em;
+
+        text-align: center;
+
+        color: #c18000;
+        &::after {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: normal;
+
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+
+            content: '+';
+
+            color: white;
+        }
+    }
+    &__item {
+        position: relative;
+
+        display: table-row;
+        float: left;
+
+        box-sizing: border-box;
+        width: 30%;
+        height: 230px;
+        margin-left: 5%;
+
+        background: #ec9e04;
+        background-clip: content-box;
+        &:first-child {
+            margin-left: 0;
+        }
+        &--attachment {
+            width: 65%;
+        }
+    }
 }
