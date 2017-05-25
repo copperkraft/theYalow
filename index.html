@@ -24,12 +24,12 @@
         <div class="slider">
             <div class="slider__container">
                 <div class="slider__item">
-                    <video></video>
+                    <video class="slider__video" poster="images/player.png" controls></video>
                 </div>
                 <div class="slider__title">
-                    <span>the cool</span>
+                    <span class="slider__primary-text">the cool</span>
                     <br>
-                    the minimal
+                    <span class="slider__secondary-text">the minimal</span>
                 </div>
             </div>
         </div>
@@ -59,27 +59,30 @@
     <div class="timeline">
 
 
-        <div class="timeline__container">
+
             <div class="timeline__title">lorem ipsum dolor sit amet</div>
             <div class="timeline__content-box">
-                <div class="timeline__video-block">
-                    <video class="timeline__video-player">
-
-                    </video>
-                    <div class="timeline__video-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    </div>
-                </div>
                 <div class="timeline__social">
                     <div class="timeline__social-icon">
                         <span class="icon-twitter"></span>
                     </div>
                     <a class="timeline__add-link">+</a>
                 </div>
+                <div class="timeline__video-block">
+                    <video class="timeline__video-player" controls>
+
+                    </video>
+                    <div class="timeline__video-text">
+                        <a class="timeline__add-link">+</a>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
+
     </div>
     <div class="offers">
         <div class="offers__container">
@@ -91,11 +94,26 @@
                     <div class="offers__special-offer">its 100% free</div>
                 </div>
                 <ul class="offers__list">
-                    <li class="offers__list-element">Lorem ipsum dolor sit amet</li>
-                    <li class="offers__list-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit<li>
-                    <li class="offers__list-element">consectetur adipiscing elit</li>
-                    <li class="offers__list-element">dolor sit amet, consectetur, dolor sit amet, consectetur</li>
-
+                    <li class="offers__list-element">
+                        <a class="offers__link">
+                            Lorem ipsum dolor sit amet
+                        </a>
+                    </li>
+                    <li class="offers__list-element">
+                        <a class="offers__link">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </a>
+                    <li>
+                    <li class="offers__list-element">
+                        <a class="offers__link">
+                            consectetur adipiscing elit
+                        </a>
+                    </li>
+                    <li class="offers__list-element">
+                        <a class="offers__link">
+                            dolor sit amet, consectetur, dolor sit amet, consectetur
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

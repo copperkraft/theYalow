@@ -1,5 +1,5 @@
-@import "../../mixins/container";
-@import "../../colors";
+@import '../../mixins/container';
+@import '../../colors';
 
 .navigation {
     float: right;
@@ -8,7 +8,8 @@
     padding-left: 2em;
 
     background: @main-color;
-    box-shadow: -5px -5px 0 fadeout(@main-color, 50%), -10px -10px 0 fadeout(@main-color, 50%);
+    box-shadow: -5px -5px 0 fadeout(@main-color, 50%),
+    -10px -10px 0 fadeout(@main-color, 50%);
 
     &::after {
         display: table;
@@ -23,6 +24,8 @@
         float: left;
 
         padding: 0.6em 1em;
+
+        text-transform: uppercase;
 
         color: darken(@main-color, 20%);
         border-right: 1px solid fadeout(darken(@main-color, 20%), 50%);
