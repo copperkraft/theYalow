@@ -1,22 +1,26 @@
 .logo {
-    font-size: 42px;
-    font-weight: 400;
-    font-style: italic;
-
-    display: inline-block;
-
     box-sizing: border-box;
-    height: 2em;
-    padding-top: 0.5em;
-    padding-left: 2.2em;
 
     text-decoration: none;
 
     color: white;
-    background: url('images/logo.png') no-repeat;
     background-size: contain;
+    font-size: 42px;
+
+    .logo__text {
+        font-size: 1em;
+        font-weight: 400;
+        font-style: italic;
+
+        display: inline-block;
+    }
+    .logo__image {
+        height: 2em;
+        width: auto;
+        margin-bottom: -0.5em;
+    }
 
     &--small {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
