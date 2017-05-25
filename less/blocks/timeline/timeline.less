@@ -4,55 +4,29 @@
 
 
 .timeline {
-    padding: 0 0 170px;
+    padding: 0 0 165px;
 
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
-
-    /*
-
-    <div class="timeline__container">
-            <div class="timeline__title">lorem ipsum dolor sit amet</div>
-            <div class="timeline__content-box">
-                <div class="timeline__video-block">
-                    <video class="timeline__video-player" controls>
-
-                    </video>
-                    <div class="timeline__video-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut
-                    </div>
-                </div>
-                <div class="timeline__social">
-                    <div class="timeline__social-icon">
-                        <span class="icon-twitter"></span>
-                    </div>
-                    <a class="timeline__add-link">+</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    */
 
     .timeline__content-box {
         .container;
 
-        height: 230px;
+        height: 232px;
     }
 
     .timeline__title {
         font-size: 36px;
 
-        width: 1020px;
-        margin: 0 auto;
-        padding: 1em 0;
+        .container;
+        padding: 1em 0 1.1em;
 
         text-transform: uppercase;
 
-        color: white;
+        color: #ffffff;
     }
 
     .timeline__video-block {
-        width: 610px;
+        width: 655px;
         height: 100%;
 
         background: #ec9e04;
@@ -60,12 +34,13 @@
     .timeline__video-player {
         float: right;
 
-        width: 300px;
+        width: 315px;
         height: 100%;
     }
     .timeline__video-text {
         font-size: 30px;
         font-weight: 200;
+        line-height: 1.28em;
 
         position: relative;
 
@@ -86,41 +61,41 @@
 
         position: absolute;
         right: 8px;
-        bottom: 0;
+        bottom: 5px;
 
-        content: '+';
+        color: #ffffff;
+    }
 
-        color: white;
+    .timeline__counter {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: normal;
+
+        position: absolute;
+        right: 20px;
+        top: 12px;
+
+        color: #ffffff;
     }
 
     .timeline__social {
-        font-size: 160px;
-        line-height: 1.4em;
 
         position: relative;
 
         float: right;
 
-        width: 300px;
+        width: 330px;
         height: 100%;
 
         text-align: center;
 
-        color: #c18000;
+
         background: #ec9e04;
     }
 
-    .timeline__add-link {
-        font-size: 40px;
-        font-weight: bold;
-        line-height: normal;
-
-        position: absolute;
-        right: 5px;
-        bottom: 0;
-
-        content: '+';
-
-        color: white;
+    .timeline__social-icon {
+        font-size: 165px;
+        line-height: 1.5em;
+        color: #c18000;
     }
 }
