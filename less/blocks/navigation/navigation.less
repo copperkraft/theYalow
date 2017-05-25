@@ -1,7 +1,9 @@
-@import '../../mixins/container';
+@import '../../mixins/clearfix';
 @import '../../colors';
 
 .navigation {
+    .clearfix;
+
     float: right;
 
     margin-top: 40px;
@@ -11,14 +13,11 @@
     box-shadow: -5px -5px 0 fadeout(@main-color, 50%),
     -10px -10px 0 fadeout(@main-color, 50%);
 
-    &::after {
-        display: table;
-        clear: both;
-
-        content: '';
+    .navigation__icon {
+        margin-right: 0.5em;
     }
 
-    &__link {
+    .navigation__link {
         font-size: 18px;
 
         float: left;
@@ -34,5 +33,3 @@
         }
     }
 }
-
-
