@@ -14,10 +14,10 @@
         height: 232px;
     }
 
-    .timeline__title {
+    .timeline__title {.container;
+
         font-size: 36px;
 
-        .container;
         padding: 1em 0 1.1em;
 
         text-transform: uppercase;
@@ -45,11 +45,12 @@
         position: relative;
 
         overflow: hidden;
-        text-overflow: clip;
 
         box-sizing: border-box;
         height: 100%;
         padding: 15px 30px;
+
+        text-overflow: clip;
 
         color: #ffffff;
     }
@@ -72,14 +73,13 @@
         line-height: normal;
 
         position: absolute;
-        right: 20px;
         top: 12px;
+        right: 20px;
 
         color: #ffffff;
     }
 
     .timeline__social {
-
         position: relative;
 
         float: right;
@@ -89,13 +89,13 @@
 
         text-align: center;
 
-
         background: #ec9e04;
     }
 
     .timeline__social-icon {
         font-size: 165px;
         line-height: 1.5em;
+
         color: #c18000;
     }
 }

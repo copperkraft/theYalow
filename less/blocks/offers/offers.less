@@ -2,16 +2,18 @@
 @import '../../colors';
 
 .offers {
+    display: table;
+
     width: 100%;
     padding: 40px 0 100px;
 
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOElEQVQoU2P08fH5z4AGfv/+DRZhZWVlYHR3d0dRABIkTQFBK0AKkI1Edw8jugKYYphC0hWgWwEArBMtA7ocHTgAAAAASUVORK5CYII=');
-    display: table;
 
 
 
     .offers__container {
         .container;
+
         display: table;
     }
     .offers__content-box {
@@ -19,31 +21,32 @@
     }
 
     .offers__devices {
-        display: table-cell;
         position: relative;
+
+        display: table-cell;
 
         width: 577px;
         min-height: 300px;
         padding-left: 18px;
+
         vertical-align: top;
+
         background-size: contain;
     }
     .offers__devices-label {
+        font-size: 15px;
+        font-weight: bold;
+
         position: absolute;
         top: -42px;
         left: 0;
 
-
-        font-size: 15px;
-        font-weight: bold;
-
         display: table-cell;
 
+        box-sizing: border-box;
         width: 115px;
         height: 115px;
-
         padding-top: 50px;
-        box-sizing: border-box;
 
         text-align: center;
         vertical-align: middle;
@@ -56,6 +59,7 @@
     .offers__link {
         font-size: 24px;
         font-weight: 200;
+
         vertical-align: bottom;
 
         color: #a9a9a9;
@@ -63,17 +67,21 @@
 
     .offers__list {
         display: table-cell;
-        vertical-align: bottom;
+
         width: 310px;
+
+        vertical-align: bottom;
     }
 
     .offers__list-element {
         font-size: 40px;
         line-height: 0.68em;
+
         padding-top: 0.5em;
 
-        color: @main-color;
         list-style: disc outside;
+
+        color: @main-color;
         &:last-child {
             margin-bottom: -6px;
         }
