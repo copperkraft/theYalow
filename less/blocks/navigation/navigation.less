@@ -25,11 +25,16 @@
         padding: 0.6em 1em;
 
         text-transform: uppercase;
+        text-decoration: none;
+        transition: 100ms;
 
         color: darken(@main-color, 20%);
         border-right: 1px solid fadeout(darken(@main-color, 20%), 50%);
         &:last-child {
             border: none;
+        }
+        &:hover {
+            color: #000000
         }
     }
 }
