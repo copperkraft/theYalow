@@ -62,7 +62,13 @@
 
         vertical-align: bottom;
 
+        text-decoration: none;
         color: #a9a9a9;
+
+        transition: 100ms;
+        &:hover {
+            color: @main-color;
+        }
     }
 
     .offers__list {
@@ -82,9 +88,7 @@
         list-style: disc outside;
 
         color: @main-color;
-        &:last-child {
-            margin-bottom: -6px;
-        }
+
     }
 
 
