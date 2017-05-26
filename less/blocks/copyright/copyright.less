@@ -1,14 +1,19 @@
+@import '../../colors';
+
 .copyright {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 200;
 
     display: inline-block;
 
-    box-sizing: border-box;
-    padding-top: 0.5em;
-
+    transition: 200ms;
+    vertical-align: baseline;
     text-decoration: none;
     text-transform: uppercase;
 
-    color: white;
+    color: #ffffff;
+
+    &:hover {
+        color: @main-color;
+    }
 }
