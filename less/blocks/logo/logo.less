@@ -1,11 +1,14 @@
+@import '../../colors';
+
 .logo {
-    box-sizing: border-box;
+    font-size: 42px;
+
+    display: inline-block;
 
     text-decoration: none;
 
-    color: white;
+    color: #ffffff;
     background-size: contain;
-    font-size: 42px;
 
     .logo__text {
         font-size: 1em;
@@ -13,14 +16,26 @@
         font-style: italic;
 
         display: inline-block;
+
+        padding-top: 0.6em;
+
+        transition: 200ms;
+        vertical-align: baseline;
     }
     .logo__image {
-        height: 2em;
+        display: inline-block;
+        float: left;
+
         width: auto;
-        margin-bottom: -0.5em;
+        max-height: 2em;
+
+        vertical-align: middle;
     }
 
     &--small {
         font-size: 28px;
+    }
+    &:hover {
+        color: @main-color;
     }
 }
