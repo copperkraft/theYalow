@@ -1,12 +1,17 @@
 @import '../../mixins/container';
+@import '../../mixins/responsive';
 @import '../../colors';
 
 .offers {
     display: table;
-
+    box-sizing: border-box;
     width: 100%;
-    padding: 40px 0 105px;
 
+    padding: 20px 0 27px;
+
+    @media(min-width: @desktop) {
+        padding: 40px 0 105px;
+    }
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOElEQVQoU2P08fH5z4AGfv/+DRZhZWVlYHR3d0dRABIkTQFBK0AKkI1Edw8jugKYYphC0hWgWwEArBMtA7ocHTgAAAAASUVORK5CYII=');
 
 
@@ -15,35 +20,63 @@
         .container;
     }
     .offers__content-box {
-        display: table-row;
+        @media(min-width: @desktop) {
+            display: table-row;
+        }
+        @media(max-width: @mobile) {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
     }
 
     .offers__devices {
         position: relative;
-
-        display: table-cell;
-
-        min-height: 300px;
+        width: 100%;
+        box-sizing: border-box;
         padding-left: 18px;
+
+
+        @media(min-width: @desktop) {
+            width: auto;
+            display: table-cell;
+            min-height: 300px;
+            padding-left: 18px;
+            padding-right: 0;
+        }
+
 
         vertical-align: top;
 
         background-size: contain;
     }
+    .offers__devices-image {
+        width: 100%;
+        @media(min-width: @tablet) {
+            width: auto;
+        }
+    }
     .offers__devices-label {
-        font-size: 15px;
+        font-size: 2.3vw;
         font-weight: bold;
 
         position: absolute;
-        top: -42px;
+        top: -2.8em;
         left: 0;
 
         display: table-cell;
 
         box-sizing: border-box;
-        width: 115px;
-        height: 115px;
-        padding-top: 50px;
+        width: 17.5vw;
+        height: 17.5vw;
+        padding-top: 3.3em;
+        @media(min-width: @tablet) {
+            font-size: 15px;
+            width: 115px;
+            height: 115px;
+            padding-top: 50px;
+        }
+
 
         text-align: center;
         vertical-align: middle;
@@ -68,7 +101,14 @@
     }
 
     .offers__list {
-        display: table-cell;
+        display: none;
+
+        @media(min-width: @tablet) {
+            display: block;
+        }
+        @media(min-width: @desktop) {
+            display: table-cell;
+        }
 
         padding-left: 115px;
 
@@ -89,9 +129,13 @@
 
 
     .offers__title {
-        font-size: 42px;
+        font-size: 21px;
+        padding-bottom: 20px;
+        @media(min-width: @tablet) {
+            font-size: 42px;
+            padding-bottom: 55px;
+        }
 
-        padding-bottom: 55px;
 
         text-align: center;
         text-transform: uppercase;
