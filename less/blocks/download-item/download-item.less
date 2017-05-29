@@ -1,14 +1,27 @@
+@import '../../mixins/responsive';
 
 .download-item {
     &__icon {
-        font-size: 97px;
+
+        font-size: 36px;
+
+        @media(min-width: @tablet) {
+            font-size: 97px;
+        }
 
         text-align: center;
 
         color: #f3c306;
     }
     &__link {
-        font-size: 27px;
+
+        font-size: 11px;
+
+        @media(min-width: @tablet) {
+            font-size: 27px;
+        }
+
+
         font-weight: 200;
 
         display: block;
