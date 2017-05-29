@@ -1,4 +1,5 @@
 @import '../../mixins/container';
+@import '../../mixins/responsive';
 @import '../../colors';
 
 
@@ -6,16 +7,21 @@
     .container;
 
     .slider__container {
-        display: table;
+        @media(min-width: @desktop) {
+            display: table;
 
-        padding-left: 10px;
+            padding-left: 10px;
+        }
     }
 
     .slider__item {
-        float: left;
+        width: 100%;
+        @media(min-width: @desktop) {
+            float: left;
 
-        min-width: 552px;
-        height: 334px;
+            min-width: 552px;
+            height: 334px;
+        }
     }
 
     .slider__video {
@@ -27,7 +33,7 @@
         font-size: 60px;
         line-height: 1.3em;
 
-        display: table-cell;
+        display: none;
 
         width: 100%;
         height: 100%;
@@ -36,6 +42,9 @@
         text-align: center;
         vertical-align: middle;
         text-transform: uppercase;
+        @media(min-width: @desktop) {
+            display: table-cell;
+        }
     }
 
     .slider__primary-text {

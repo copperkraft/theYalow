@@ -1,4 +1,5 @@
 @import '../../colors';
+@import '../../mixins/responsive';
 
 .logo {
     font-size: 42px;
@@ -9,6 +10,16 @@
 
     color: #ffffff;
     background-size: contain;
+
+    @media(max-width: @mobile) {
+        font-size: 10px;
+
+        box-sizing: border-box;
+        width: 29%;
+        padding: 5px 0 5px 5px;
+
+        background-color: gray;
+    }
 
     .logo__text {
         font-size: 1em;

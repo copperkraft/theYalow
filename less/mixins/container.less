@@ -1,10 +1,14 @@
 @import 'clearfix';
+@import 'responsive';
 
 .container() {
     .clearfix;
 
-    width: 1020px;
+    max-width: 100%;
     margin: 0 auto;
+    @media(min-width: 1020px) {
+        width: 1020px;
+    };
 }
 
 

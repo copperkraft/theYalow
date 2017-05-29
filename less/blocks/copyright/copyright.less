@@ -1,10 +1,11 @@
 @import '../../colors';
+@import '../../mixins/responsive';
 
 .copyright {
     font-size: 13px;
     font-weight: 200;
 
-    display: inline-block;
+    display: none;
 
     transition: 200ms;
     vertical-align: baseline;
@@ -12,6 +13,9 @@
     text-transform: uppercase;
 
     color: #ffffff;
+    @media(min-width: @desktop) {
+        display: inline-block;
+    }
 
     &:hover {
         color: @main-color;

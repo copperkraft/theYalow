@@ -2,13 +2,15 @@
 
 
 .header {
-    padding: 28px 0 65px;
-
     background: url('images/header_background.jpg') no-repeat;
     background-size: cover;
+    @media(min-width: @desktop) {
+        padding: 28px 0 65px;
+    }
     .header__navigation {
         .container;
-
-        margin-bottom: 55px;
+        @media(min-width: @desktop) {
+            margin-bottom: 55px;
+        }
     }
 }

@@ -1,28 +1,39 @@
 @import '../../mixins/clearfix';
+@import '../../mixins/responsive';
 @import '../../colors';
 
 .navigation {
     .clearfix;
 
+    font-size: 9px;
+
     float: right;
 
-    margin-top: 43px;
-    padding-left: 2em;
+    width: 71%;
 
     background: @main-color;
-    box-shadow: -5px -5px 0 fadeout(@main-color, 50%),
-    -10px -10px 0 fadeout(@main-color, 50%);
+
+    @media(min-width: @desktop) {
+        margin-top: 43px;
+        padding-left: 2em;
+
+        box-shadow: -5px -5px 0 fadeout(@main-color, 50%),
+        -10px -10px 0 fadeout(@main-color, 50%);
+    }
+    @media (min-width: @tablet) {
+        font-size: 18px;
+
+        width: initial;
+    }
 
     .navigation__icon {
         margin-right: 0.5em;
     }
 
     .navigation__link {
-        font-size: 18px;
-
         float: left;
 
-        padding: 0.6em 1em;
+        padding: 1.15em 1em;
 
         transition: 100ms;
         text-decoration: none;
@@ -30,6 +41,16 @@
 
         color: darken(@main-color, 20%);
         border-right: 1px solid fadeout(darken(@main-color, 20%), 50%);
+
+        &:first-child {
+            @media (max-width: @mobile) {
+                padding-left: 2em;
+            }
+        }
+
+        @media (min-width: @tablet) {
+            padding: 0.6em 1em;
+        }
         &:last-child {
             border: none;
         }
