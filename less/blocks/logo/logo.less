@@ -43,8 +43,13 @@
         vertical-align: middle;
     }
 
-    .logo--small {
+    &.logo--small {
         font-size: 28px;
+        @media(max-width: @mobile) {
+            font-size: 8px;
+
+            background: transparent;
+        }
     }
     &:hover {
         color: @main-color;
