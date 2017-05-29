@@ -1,13 +1,15 @@
 @import '../../mixins/container';
 @import '../../mixins/clearfix';
+@import '../../mixins/responsive';
 @import '../../colors';
 
 
 .timeline {
-    padding: 0 0 165px;
+    @media(min-width: @tablet) {
+        padding: 0 0 165px;
 
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
-
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
+    }
     .timeline__content-box {
         .container;
 
@@ -19,44 +21,70 @@
 
         font-size: 36px;
 
+        display: none;
+
         padding: 1em 0 1.1em;
 
         text-transform: uppercase;
 
         color: #ffffff;
+
+        @media(min-width: @tablet) {
+            display: block;
+        }
     }
 
     .timeline__video-block {
-        width: 655px;
+        .clearfix;
+
+        padding: 5px;
+        @media(min-width: @desktop) {
+            float: left;
+
+            width: 655px;
+            padding: 0;
+        }
     }
     .timeline__video-player {
         float: right;
 
-        width: 315px;
-        height: 100%;
+        width: 50%;
+        height: auto;
+        margin-left: 5px;
+        @media(min-width: @desktop) {
+            width: 315px;
+        }
     }
     .timeline__video-text {
-        font-size: 30px;
+        font-size: 4.6vw;
         font-weight: 200;
-        line-height: 1.28em;
+        line-height: 1.2em;
 
         position: relative;
 
         overflow: hidden;
 
         box-sizing: border-box;
-        height: 100%;
-        min-height: 232px;
-        padding: 15px 30px;
+        min-height: 37vw;
+        padding: 2vw 4vw;
 
         text-overflow: clip;
 
         color: #ffffff;
         background: #ec9e04;
+
+        @media(min-width: @desktop) {
+            font-size: 30px;
+            line-height: 1.28em;
+
+            min-height: 232px;
+            margin: 0;
+            padding: 15px 30px;
+        }
     }
 
     .timeline__add-link {
-        font-size: 24px;
+        font-size: 80%;
         font-weight: bold;
         line-height: normal;
 
@@ -82,20 +110,28 @@
     .timeline__social {
         position: relative;
 
-        float: right;
-
-        width: 330px;
-        min-height: 232px;
-
         text-align: center;
 
-        background: #ec9e04;
+        background: @main-color;
+
+        @media(min-width: @desktop) {
+            float: right;
+
+            width: 330px;
+            min-height: 232px;
+        }
+        @media(min-width: @desktop) {
+            background: #ec9e04;
+        }
     }
 
     .timeline__social-icon {
-        font-size: 165px;
+        font-size: 80px;
         line-height: 1.4em;
 
         color: #c18000;
+        @media(min-width: @tablet) {
+            font-size: 165px;
+        }
     }
 }
