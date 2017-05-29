@@ -19,6 +19,7 @@
 
     .offers__container {
         .container;
+        text-align: center;
     }
     .offers__content-box {
         @media(min-width: @desktop) {
@@ -34,7 +35,12 @@
         position: relative;
 
         box-sizing: border-box;
-        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        @media(max-width: @tablet - 1px) {
+            width: 100%;
+        }
+
         padding-left: 18px;
 
         vertical-align: top;
@@ -95,6 +101,7 @@
         vertical-align: bottom;
         text-decoration: none;
 
+
         color: #a9a9a9;
         &:hover {
             color: @main-color;
@@ -109,6 +116,7 @@
         list-style: disc outside;
 
         vertical-align: bottom;
+        text-align: left;
 
         @media(min-width: @tablet) {
             display: block;
