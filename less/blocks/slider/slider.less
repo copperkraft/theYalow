@@ -7,28 +7,26 @@
     .container;
 
     .slider__container {
-        @media(min-width: @desktop) {
+        @media screen and (min-width: @desktop) {
             display: table;
 
             padding-left: 10px;
         }
     }
-
     .slider__item {
         width: 100%;
-        @media(min-width: @desktop) {
+
+        @media screen and (min-width: @desktop) {
             float: left;
 
             min-width: 552px;
             height: 334px;
         }
     }
-
     .slider__video {
         width: 100%;
         height: auto;
     }
-
     .slider__title {
         font-size: 60px;
         line-height: 1.3em;
@@ -42,15 +40,14 @@
         text-align: center;
         vertical-align: middle;
         text-transform: uppercase;
-        @media(min-width: @desktop) {
+
+        @media screen and (min-width: @desktop) {
             display: table-cell;
         }
     }
-
     .slider__primary-text {
         color: @main-color;
     }
-
     .slider__secondary-text {
         color: #ffffff;
     }

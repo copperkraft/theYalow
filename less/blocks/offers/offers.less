@@ -17,23 +17,21 @@
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOElEQVQoU2P08fH5z4AGfv/+DRZhZWVlYHR3d0dRABIkTQFBK0AKkI1Edw8jugKYYphC0hWgWwEArBMtA7ocHTgAAAAASUVORK5CYII=');
     }
 
-
-
     .offers__container {
         .container;
 
         text-align: center;
     }
     .offers__content-box {
-        @media(min-width: @desktop) {
+        @media screen and (min-width: @desktop) {
             display: table-row;
         }
-        @media(max-width: @mobile) {
+
+        @media screen and (max-width: @mobile) {
             margin-top: 20px;
             padding: 0 20px;
         }
     }
-
     .offers__devices {
         position: relative;
 
@@ -46,12 +44,12 @@
         vertical-align: top;
 
         background-size: contain;
-        @media(max-width: @tablet - 1px) {
+
+        @media screen and (max-width: @tablet - 1px) {
             width: 100%;
         }
 
-
-        @media(min-width: @desktop) {
+        @media screen and (min-width: @desktop) {
             display: table-cell;
 
             width: auto;
@@ -62,7 +60,8 @@
     }
     .offers__devices-image {
         width: 100%;
-        @media(min-width: @tablet) {
+
+        @media screen and (min-width: @tablet) {
             width: auto;
         }
     }
@@ -88,7 +87,8 @@
         color: white;
         border-radius: 50%;
         background: @main-color;
-        @media(min-width: @tablet) {
+
+        @media screen and (min-width: @tablet) {
             font-size: 15px;
 
             width: 115px;
@@ -109,7 +109,6 @@
             color: @main-color;
         }
     }
-
     .offers__list {
         display: none;
 
@@ -120,14 +119,14 @@
         text-align: left;
         vertical-align: bottom;
 
-        @media(min-width: @tablet) {
+        @media screen and (min-width: @tablet) {
             display: block;
         }
-        @media(min-width: @desktop) {
+
+        @media screen and (min-width: @desktop) {
             display: table-cell;
         }
     }
-
     .offers__list-element {
         font-size: 40px;
         line-height: 0.68em;
@@ -136,9 +135,6 @@
 
         color: @main-color;
     }
-
-
-
     .offers__title {
         font-size: 21px;
 
@@ -148,7 +144,8 @@
         text-transform: uppercase;
 
         color: @main-color;
-        @media(min-width: @tablet) {
+
+        @media screen and (min-width: @tablet) {
             font-size: 42px;
 
             padding-bottom: 55px;

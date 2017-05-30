@@ -5,17 +5,17 @@
 
 
 .timeline {
-    @media(min-width: @tablet) {
+    @media screen and (min-width: @tablet) {
         padding: 0 0 165px;
 
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
     }
+
     .timeline__content-box {
         .container;
 
         min-height: 232px;
     }
-
     .timeline__title {
         .container;
 
@@ -29,16 +29,16 @@
 
         color: #ffffff;
 
-        @media(min-width: @tablet) {
+        @media screen and (min-width: @tablet) {
             display: block;
         }
     }
-
     .timeline__video-block {
         .clearfix;
 
         padding: 5px;
-        @media(min-width: @desktop) {
+
+        @media screen and (min-width: @desktop) {
             float: left;
 
             width: 655px;
@@ -51,7 +51,8 @@
         width: 50%;
         height: auto;
         margin-left: 5px;
-        @media(min-width: @desktop) {
+
+        @media screen and (min-width: @desktop) {
             width: 315px;
         }
     }
@@ -95,6 +96,7 @@
         display: none;
 
         color: #ffffff;
+
         @media(min-width: @desktop) {
             font-size: 24px;
 
@@ -114,6 +116,7 @@
         display: none;
 
         color: #ffffff;
+
         @media(min-width: @desktop) {
             font-size: 24px;
 
@@ -134,6 +137,7 @@
             width: 330px;
             min-height: 232px;
         }
+
         @media(min-width: @desktop) {
             background: #ec9e04;
         }
@@ -144,6 +148,7 @@
         line-height: 1.4em;
 
         color: #c18000;
+
         @media(min-width: @tablet) {
             font-size: 165px;
         }
