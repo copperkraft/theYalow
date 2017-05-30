@@ -7,14 +7,11 @@
     display: inline-block;
 
     box-sizing: border-box;
-    width: 29%;
     padding: 5px 0 5px 5px;
 
     text-decoration: none;
 
     color: #ffffff;
-    background: linear-gradient(0, #444444, #5a5a5a 30px);
-    background-size: contain;
 
     @media screen and (min-width: @tablet) {
         font-size: 42px;
@@ -47,12 +44,11 @@
     }
 
     &.logo--small {
-        font-size: 28px;
+        font-size: 8px;
 
-        @media screen and (max-width: @tablet) {
-            font-size: 8px;
+        @media screen and (min-width: @tablet) {
 
-            background: transparent;
+            font-size: 28px;
         }
     }
     &:hover {
