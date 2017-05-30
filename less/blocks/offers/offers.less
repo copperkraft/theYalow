@@ -9,16 +9,19 @@
     width: 100%;
     padding: 20px 0 27px;
 
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOElEQVQoU2P08fH5z4AGfv/+DRZhZWVlYHR3d0dRABIkTQFBK0AKkI1Edw8jugKYYphC0hWgWwEArBMtA7ocHTgAAAAASUVORK5CYII=');
+    background-color: #474747 ;
 
     @media(min-width: @desktop) {
         padding: 40px 0 105px;
+
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAOElEQVQoU2P08fH5z4AGfv/+DRZhZWVlYHR3d0dRABIkTQFBK0AKkI1Edw8jugKYYphC0hWgWwEArBMtA7ocHTgAAAAASUVORK5CYII=');
     }
 
 
 
     .offers__container {
         .container;
+
         text-align: center;
     }
     .offers__content-box {
@@ -34,18 +37,18 @@
     .offers__devices {
         position: relative;
 
-        box-sizing: border-box;
         display: inline-block;
-        margin: 0 auto;
-        @media(max-width: @tablet - 1px) {
-            width: 100%;
-        }
 
+        box-sizing: border-box;
+        margin: 0 auto;
         padding-left: 18px;
 
         vertical-align: top;
 
         background-size: contain;
+        @media(max-width: @tablet - 1px) {
+            width: 100%;
+        }
 
 
         @media(min-width: @desktop) {
@@ -101,7 +104,6 @@
         vertical-align: bottom;
         text-decoration: none;
 
-
         color: #a9a9a9;
         &:hover {
             color: @main-color;
@@ -115,8 +117,8 @@
 
         list-style: disc outside;
 
-        vertical-align: bottom;
         text-align: left;
+        vertical-align: bottom;
 
         @media(min-width: @tablet) {
             display: block;
