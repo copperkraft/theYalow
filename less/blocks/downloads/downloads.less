@@ -6,7 +6,10 @@
     z-index: 1;
 
     background: repeating-linear-gradient(45deg, #ffffff, #eeeeee 1px, #ffffff 2px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+    @media(min-width: @desktop) {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
 
     .downloads__container {
         .container;
@@ -21,9 +24,10 @@
         padding-bottom: 10px;
 
         @media(min-width: @tablet) {
-            border-right: 2px solid rgba(195, 195, 195, 0.5);
             padding-top: 45px;
             padding-bottom: 30px;
+
+            border-right: 2px solid rgba(195, 195, 195, 0.5);
         }
         &:first-child {
             border-left: 2px solid rgba(195, 195, 195, 0.5);
