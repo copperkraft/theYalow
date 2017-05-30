@@ -23,13 +23,16 @@
         text-align: center;
     }
     .offers__content-box {
+        margin-top: 20px;
+        padding: 0 20px;
+
         @media screen and (min-width: @desktop) {
             display: table-row;
         }
 
-        @media screen and (max-width: @mobile) {
-            margin-top: 20px;
-            padding: 0 20px;
+        @media screen and (min-width: @tablet) {
+            margin-top: 0;
+            padding: 0;
         }
     }
     .offers__devices {
@@ -120,7 +123,7 @@
         vertical-align: bottom;
 
         @media screen and (min-width: @tablet) {
-            display: block;
+            display: inline-block;
         }
 
         @media screen and (min-width: @desktop) {
