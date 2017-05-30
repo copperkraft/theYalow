@@ -2,23 +2,26 @@
 @import '../../mixins/responsive';
 
 .logo {
-    font-size: 42px;
+    font-size: 10px;
 
     display: inline-block;
+
+    box-sizing: border-box;
+    width: 29%;
+    padding: 5px 0 5px 5px;
 
     text-decoration: none;
 
     color: #ffffff;
+    background: linear-gradient(0, #444444, #5a5a5a 30px);
     background-size: contain;
 
-    @media(max-width: @mobile) {
-        font-size: 10px;
+    @media(min-width: @tablet) {
+        font-size: 42px;
 
-        box-sizing: border-box;
-        width: 29%;
-        padding: 5px 0 5px 5px;
+        width: auto;
 
-        background-color: gray;
+        background: none;
     }
 
     .logo__text {
@@ -45,7 +48,7 @@
 
     &.logo--small {
         font-size: 28px;
-        @media(max-width: @mobile) {
+        @media(max-width: @tablet) {
             font-size: 8px;
 
             background: transparent;

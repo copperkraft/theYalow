@@ -13,17 +13,19 @@
 
     background: @main-color;
 
+    @media (min-width: @tablet) {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
     @media(min-width: @desktop) {
+        width: initial;
         margin-top: 43px;
         padding-left: 2em;
 
         box-shadow: -5px -5px 0 fadeout(@main-color, 50%),
         -10px -10px 0 fadeout(@main-color, 50%);
-    }
-    @media (min-width: @tablet) {
-        font-size: 18px;
-
-        width: initial;
     }
 
     .navigation__icon {
