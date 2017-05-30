@@ -6,9 +6,11 @@
 
 .timeline {
     @media screen and (min-width: @tablet) {
-        padding: 0 0 165px;
-
         background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAIAAAAzED4bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABWSURBVFhH7c6hEQAgDMBA9ukcjI9iFAQWj8u1oiJ3b+Iyzooqd88qbhFuEW4RbhFuEW4RbhFuEW4RXbe+zvguM9wi3CLcItwi3CLcItwi3CLcIlpurXiciYly4V3GzwAAAABJRU5ErkJggg==');
+    }
+
+    @media screen and (min-width: @desktop) {
+        padding: 0 0 165px;
     }
 
     .timeline__content-box {
@@ -31,7 +33,12 @@
 
         @media screen and (min-width: @tablet) {
             display: block;
+            text-align: center;
         }
+
+        @media screen and (min-width: @desktop) {
+            text-align: left;
+        };
     }
     .timeline__video-block {
         .clearfix;
